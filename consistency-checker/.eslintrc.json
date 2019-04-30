@@ -1,0 +1,7 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+      "max-len": ["error", { "code": 160 }],
+      "no-console": "off"
+    }
+}

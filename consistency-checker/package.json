@@ -1,0 +1,42 @@
+{
+  "name": "consistency-checker",
+  "version": "0.1.0",
+  "description": "consistency-checker. Oracle tool to enhace trust between parties involved in private smart contracts.",
+  "main": "./index.js",
+  "author": "@miguelmartinezinf",
+  "bugs": {
+    "url": "https://github.com/miguelmartinezinf/consistency-checker/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/miguelmartinezinf/consistency-checker",
+  "keywords": [
+    "Consistency-checker",
+    "Quorum",
+    "Ethereum",
+    "JavaScript",
+    "tool"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmartinezinf/consistency-checker"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bignumber.js": "^8.1.1",
+    "ethereumjs-tx": "^1.3.4",
+    "keythereum": "^1.0.4",
+    "parse-filepath": "^1.0.2",
+    "web3": "^1.0.0-beta.36",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2"
+  }
+}

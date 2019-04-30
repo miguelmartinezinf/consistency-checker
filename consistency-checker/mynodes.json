@@ -1,0 +1,23 @@
+{
+  "permissionedNodes": [
+    {
+      "publicKey": "BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo=",
+      "gethHttpUrl": "http://localhost:22000",
+      "gethWsUrl": "ws://localhost:23000",
+      "oracleNode": "true"
+
+    },
+    {
+      "publicKey": "QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=",
+      "gethHttpUrl": "http://localhost:22001",
+      "gethWsUrl": "ws://localhost:23001",
+      "oracleNode": "false"
+    },
+    {
+      "publicKey": "1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=",
+      "gethHttpUrl": "http://localhost:22002",
+      "gethWsUrl": "ws://localhost:23002",
+      "oracleNode": "false"
+    }
+  ]
+}
