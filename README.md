@@ -14,13 +14,13 @@ One of the main features of Quorum Blockchain platform is privacy, allowing priv
 
 Since this approach splits the state database into public and private parts and there is no consensus over the private database state, it does not prevent the double-spending problem. This fact is crucial as a deployed private smart contract could have a different state on every node, and there is no way to solve this problem.
 
-Nevertheless, let see a particular scenario. A smart contract X is deployed on A, B and C nodes in a private way. Every private transaction which interacts with X is sent privately to the same nodes: A, B and C. So, X contract will be the same state on every permissioned contract's node (A, B and C). Consistency-checker tries to enhance trust between participant parties that are in the same situation as the previous one.
+Nevertheless, let see a particular scenario. A smart contract X is deployed on A, B and C nodes in a private way. Every private transaction which interacts with X is sent privately to the same nodes: A, B and C. So, X contract will have the same state on every permissioned contract's node (A, B and C). If this is a requirement of the use case, there is no way to check its compliance. Consistency-checker tries to enhance trust between participant parties that are in the same situation as the previous one.
 
 
 ## Features
 
 - Configurable private contract to check consistency for and its permissioned nodes.
-- Configurable account to use for **consistency-checker** as an oracle.
+- Configurable account and node to use for **consistency-checker** as an oracle.
 - Creation of a public contract `StateRegistry.sol` to publish state updates.
 - Monitoring of `UpdateState` events, emitted by every *write* function.
 - Log of the target contract's update states through permissioned nodes on the console.
@@ -29,6 +29,7 @@ Nevertheless, let see a particular scenario. A smart contract X is deployed on A
 ## Requirements
 
 + [Node.js](https://nodejs.org/) version 9 or higher
++ [Truffle](https://www.truffleframework.com/) version 4.1
 + [Docker](https://www.docker.com/) version 18.02 or higher
 + [Docker Compose](https://www.docker.com/): compatible for docker-compose version 3.6.
 + [Quorum](https://github.com/jpmorganchase/quorum) It will be used the docker image `quorumengineering/quorum:2.2.3` (no need to install locally).
